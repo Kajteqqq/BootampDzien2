@@ -1,8 +1,9 @@
 <template>
     <div>
         <h2 class="text-color-600">Wpisy na bloga:</h2>
-
-        <button @click="pobierzWpisy">refresh</button>
+        <div class="w-100">
+            <button @click="pobierzWpisy">refresh</button>
+        </div>
         <div v-for="wpis in wpisy">
             <p>{{wpis}}</p>
         </div>
